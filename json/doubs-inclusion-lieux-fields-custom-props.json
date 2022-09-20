@@ -32,7 +32,41 @@
     {
       "name": "TYPE_STRUCTURE",
       "subtype": "tag",
-      "allowNew": false
+      "allowNew": false,
+      "definitions": [
+        {
+          "value": "association",
+          "label" : "Association"
+        },
+        {
+          "value": "biblioth_que",
+          "label" : "Bibliothèque"
+        },
+        {
+          "value": "ccas",
+          "label" : "CCAS"
+        },
+        {
+          "value": "cms",
+          "label" : "CMS"
+        },
+        {
+          "value": "collectivite",
+          "label" : "Collectivité"
+        },
+        {
+          "value": "entreprise",
+          "label" : "Entreprise"
+        },
+        {
+          "value": "espnum",
+          "label" : "Espace numérique"
+        },
+        {
+          "value": "msap_mfs",
+          "label" : "Maison France Service"
+        }
+      ]
     },
     {
       "name": "SERVICES",
@@ -43,7 +77,25 @@
     {
       "name": "ACCES",
       "subtype": "tags",
-      "tagSeparator": "-"
+      "tagSeparator": "-",
+      "definitions": [
+        {
+          "value": "acces_libre",
+          "label" : "Accès libre"
+        },
+        {
+          "value": "acces_payant",
+          "label" : "Accès payant"
+        },
+        {
+          "value": "adapt_handicap",
+          "label" : "Adapté handicapés"
+        },
+        {
+          "value": "itinerance",
+          "label" : "Itinérance"
+        }
+      ]
     },
     {
       "name": "PUBLICS",
