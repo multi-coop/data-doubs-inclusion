@@ -1,0 +1,96 @@
+{
+  "fields": [
+    {
+      "name": "NOM_DISPOSITIF",
+      "title": "Nom du dispositif",
+      "description": "Nom du dispositif",
+      "type": "string"
+    },
+    {
+      "name": "ADRESSE",
+      "title": "Adresse",
+      "type": "string"
+    },
+    {
+      "name": "CODE_POSTAL",
+      "title": "Code postal",
+      "type": "string"
+    },
+    {
+      "name": "VILLE",
+      "title": "Ville",
+      "type": "string"
+    },
+    {
+      "name": "COM_CODE",
+      "title": "Code commune",
+      "type": "number"
+    },
+    {
+      "name": "COM_NOM",
+      "title": "Nom de la commune",
+      "type": "string"
+    },
+    {
+      "name": "EPCI_CORRE",
+      "title": "EPCI",
+      "type": "string"
+    },
+    {
+      "name": "ADRESSE_COMPLETE",
+      "title": "Adresse complète",
+      "type": "string"
+    },
+    {
+      "name": "TYPE_STRUCTURE",
+      "title": "Type de structure",
+      "type": "string"
+    },
+    {
+      "name": "HORAIRES",
+      "title": "Horaires",
+      "type": "string"
+    },
+    {
+      "name": "INFOS",
+      "title": "Infos",
+      "type": "string"
+    },
+    {
+      "name": "N_TEL",
+      "title": "Numéro de téléphone",
+      "type": "string"
+    },
+    {
+      "name": "MAIL",
+      "title": "Mail",
+      "type": "string"
+    },
+    {
+      "name": "WEBSITE",
+      "title": "Site internet du lieu",
+      "type": "string",
+      "format": "uri"
+    },
+    {
+      "name": "SERVICES",
+      "title": "Services",
+      "type": "string"
+    },
+    {
+      "name": "ACCES",
+      "title": "Accès",
+      "type": "string"
+    },
+    {
+      "name": "latitude",
+      "title": "Latitude du siège",
+      "type": "number"
+    },
+    {
+      "name": "longitude",
+      "title": "Longitude du siège",
+      "type": "number"
+    }
+  ]
+}

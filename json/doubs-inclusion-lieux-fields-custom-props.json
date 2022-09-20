@@ -1,0 +1,120 @@
+{
+  "fields": [
+    {
+      "name": "NOM_DISPOSITIF",
+      "sticky": true,
+      "primaryKey": true
+    },
+    {
+      "name": "ADRESSE",
+      "subtype": "longtext",
+      "maxLength": 20
+    },
+    {
+      "name": "CODE_POSTAL",
+      "subtype": "tag"
+    },
+    {
+      "name": "COM_NOM",
+      "subtype": "tag",
+      "allowNew": true
+    },
+    {
+      "name": "EPCI_CORRE",
+      "subtype": "tag",
+      "allowNew": true
+    },
+    {
+      "name": "ADRESSE_COMPLETE",
+      "subtype": "longtext",
+      "maxLength": 20
+    },
+    {
+      "name": "TYPE_STRUCTURE",
+      "subtype": "tag",
+      "allowNew": false
+    },
+    {
+      "name": "SERVICES",
+      "subtype": "tags",
+      "tagSeparator": "-",
+      "allowNew": true
+    },
+    {
+      "name": "ACCES",
+      "subtype": "tags",
+      "tagSeparator": "-"
+    },
+    {
+      "name": "PUBLICS",
+      "subtype": "tags",
+      "tagSeparator": "–"
+    },
+    {
+      "name": "MAIL",
+      "subtype": "email"
+    },
+    {
+      "name": "WEBSITE",
+      "subtype": "link"
+    },
+    {
+      "name": "latitude",
+      "subtype": "geopoint"
+    },
+    {
+      "name": "longitude",
+      "subtype": "geopoint"
+    }
+  ],
+  "consolidation": [
+    {
+      "api_name": "api-entreprise",
+      "source_fields": [
+        { "name": "SIREN" }
+      ],
+      "activate": false,
+      "api": "https://entreprise.data.gouv.fr/api/sirene/v3/unites_legales/{{SIREN}}",
+      "results_fields": [
+        {
+          "resp_field": "unite_legale.etablissement_siege.latitude",
+          "map_to_field": "latitude"
+        },
+        {
+          "resp_field": "unite_legale.etablissement_siege.longitude",
+          "map_to_field": "longitude"
+        },
+        {
+          "resp_field": "unite_legale.etablissement_siege.geo_adresse",
+          "map_to_field": "ADRESSE_COMPLETE"
+        }
+      ]
+    },
+    {
+      "api_name": "adresse.gouv.fr",
+      "source_fields": [
+        { "name": "ADRESSE_COMPLETE" }
+      ],
+      "activate": true,
+      "api": "api-ban",
+      "results_fields": [
+        { 
+          "resp_field" : "latitude",
+          "map_to_field": "Latitude"
+        },
+        { 
+          "resp_field" : "longitude",
+          "map_to_field": "Longitude"
+        }
+      ]
+    }
+  ],
+  "validation": [
+    {
+      "api_name": "api-json-validation",
+      "api": "https://json.validator.validata.fr/validate",
+      "api_doc": "https://json.validator.validata.fr/apidocs",
+      "notes": "not implemented (yet)"
+    }
+  ]
+}

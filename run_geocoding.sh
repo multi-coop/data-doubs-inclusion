@@ -1,2 +1,2 @@
 source venv/bin/activate
-python geocoder.py csv/rhinocc-inclusion-dataset.csv -sep , -adress adresse_full
+python geocoder.py csv/DOUBS-inclusion_numerique.csv -sep , -adress ADRESSE_COMPLETE

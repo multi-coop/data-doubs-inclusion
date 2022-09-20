@@ -75,7 +75,7 @@
         }'
         gitfiles='[
         {
-          "title": "Lieux de médiation numérique",
+          "title": "Lieux de médiation numérique dans le Doubs",
           "activate": true,
           "gitfile": "http://localhost:8803/statics/csv/geocoding/geocoded.csv",
           "gitfile_": "https://github.com/multi-coop/data-rhinocc-inclusion/blob/main/csv/geocoding/geocoded.csv",
@@ -88,22 +88,22 @@
               "activate": true,
               "filterfields": [
                 {
-                  "name": "type_lieu",
+                  "name": "TYPE_STRUCTURE",
                   "filtering": "OR"
                 },
                 {
-                  "name": "nature_juridique",
+                  "name": "COM_NOM",
                   "filtering": "OR"
                 }
               ]
             },
             "schema": {
-              "file_test": "http://localhost:8900/statics/json/inclusion-schema.json",
-              "file": "https://github.com/multi-coop/data-inclusion-schema/blob/main/json/inclusion-schema.json"
+              "file": "http://localhost:8803/statics/json/doubs-inclusion-lieux-schema.json",
+              "file_": "https://github.com/multi-coop/data-doubs-inclusion/blob/main/json/doubs-inclusion-lieux-schema.json"
             },
             "fields-custom-properties": {
-              "file": "http://localhost:8803/statics/json/rhinocc-inclusion-fields-custom-props.json",
-              "file_": "https://github.com/multi-coop/data-rhinocc-inclusion/blob/main/json/rhinocc-inclusion-fields-custom-props.json"
+              "file": "http://localhost:8803/statics/json/doubs-inclusion-lieux-fields-custom-props.json",
+              "file_": "https://github.com/multi-coop/data-doubs-inclusion/blob/main/json/doubs-inclusion-lieux-fields-custom-props.json"
             },
             "cardsview": {
               "activate": true,
@@ -112,17 +112,13 @@
             "cardsdetail": true,
             "cardssettings": {
               "mini": {
-                "nom": {
+                "NOM_DISPOSITIF": {
                   "position": "title"
                 },
-                "adresse_full": {
+                "ADRESSE_COMPLETE": {
                   "position": "adress"
                 },
-                "siren": {
-                  "position": "resume",
-                  "prefix": "Numéro SIREN :"
-                },
-                "nature_juridique": {
+                "TYPE_STRUCTURE": {
                   "position": "tags"
                 },
                 "type_lieu": {
@@ -130,29 +126,28 @@
                 }
               },
               "detail": {
-                "nom": {
+                "NOM_DISPOSITIF": {
                   "position": "title"
                 },
-                "adresse_full": {
+                "ADRESSE_COMPLETE": {
                   "position": "adress"
                 },
-                "siren": {
+                "INFOS": {
                   "position": "description",
-                  "prefix": "Numéro SIREN :",
-                  "block_title": "Description"
+                  "block_title": "Informations"
                 },
-                "departement": {
+                "VILLE": {
                   "position": "tags",
-                  "block_title": "Département(s)"
+                  "block_title": "Ville"
                 },
-                "nature_juridique": {
+                "TYPE_STRUCTURE": {
                   "position": "tags",
-                  "block_title": "Nature juridique",
+                  "block_title": "Type de structure",
                   "right": true
                 },
-                "type_lieu": {
-                  "position": "subtitle",
-                  "block_title": "Type de lieu",
+                "ACCES": {
+                  "position": "tags",
+                  "block_title": "Accès",
                   "right": true
                 }
               },
@@ -197,8 +192,8 @@
                   "maxZoom": 18,
                   "minZoom": 2,
                   "item_geo_fields": {
-                    "latitude": "lat",
-                    "longitude": "lon"
+                    "latitude": "latitude",
+                    "longitude": "longitdue"
                   },
                   "zoom_item": 13,
                   "marker_icon": "map-marker",
@@ -211,10 +206,10 @@
             "datavizview_": {
               "activate": true,
               "default": false,
-              "file": "http://localhost:8803/statics/json/rhinocc-inclusion-dataviz-settings.json",
-              "file_": "https://github.com/multi-coop/data-rhinocc-inclusion/blob/main/json/rhinocc-inclusion-dataviz-settings.json"
+              "file": "http://localhost:8803/statics/json/doubs-inclusion-lieux-dataviz-settings.json",
+              "file_": "https://github.com/multi-coop/data-doubs-inclusion/blob/main/json/doubs-inclusion-lieux-dataviz-settings.json"
             },
-            "mapview_": {
+            "mapview": {
               "activate": true,
               "default": true,
               "maps": [
@@ -223,8 +218,8 @@
                     "fr": "CARTOGRAPHIE"
                   },
                   "cols": 12,
-                  "file": "http://localhost:8803/statics/json/rhinocc-inclusion-map-settings.json",
-                  "file_": "https://github.com/multi-coop/data-rhinocc-inclusion/blob/main/json/rhinocc-inclusion-map-settings.json"
+                  "file": "http://localhost:8803/statics/json/doubs-inclusion-lieux-map-settings.json",
+                  "file_": "https://github.com/multi-coop/data-doubs-inclusion/blob/main/json/doubs-inclusion-lieux-map-settings.json"
                 }
               ]
             }
@@ -235,8 +230,8 @@
           "title": "Schéma des données",
           "activate": true,
           "default-tab": false,
-          "gitfile_test": "http://localhost:8900/statics/json/inclusion-schema.json",
-          "gitfile": "https://github.com/multi-coop/data-inclusion-schema/blob/main/json/inclusion-schema.json",
+          "gitfile": "http://localhost:8803/statics/json/doubs-inclusion-lieux-schema.json",
+          "gitfile_": "https://github.com/multi-coop/data-doubs-inclusion/blob/main/json/doubs-inclusion-lieux-schema.json",
           "options": {
             "defaultDepth": 2,
             "allowKeyEdit": true
