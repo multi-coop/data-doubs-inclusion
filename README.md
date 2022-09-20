@@ -26,6 +26,8 @@ La solution proposée et réalisée ici s'appuie sur un projet open source port�
 
 ### Documentation
 
+Le site officiel du projet Datami : https://datami.multi.coop
+
 Un site dédié à la documentation technique de Datami est consultable ici : https://datami-docs.multi.coop
 
 ---
@@ -97,8 +99,8 @@ Files will be locally served on :
 
 | | logo | url |
 | :-: | :-: | :-: |
-| **RHINOCC** | ![Rhinocc](./images/rhinocc-logo.png) | https://rhinocc.fr |
-| **coopérative numérique multi** | ![multi](./images/multi-logo.png) | https://multi.coop |
+| **Département du Doubs** | https://doubs.fr |
+| **coopérative numérique multi** | https://multi.coop |
 
 ---
 
