@@ -34,7 +34,7 @@ Un site dédié à la documentation technique de Datami est consultable ici : ht
 
 ## Mini server for local development
 
-A mini server is writen in the `server.py` to serve this folder's files, so we could test and develop locally while running [multi-site-app]()
+A mini server is writen in the `server.py` to serve this folder's files, so we could test and develop locally while running Datami.
 
 To install the mini-server :
 
