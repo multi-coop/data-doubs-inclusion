@@ -18,15 +18,15 @@ La solution proposée et réalisée ici s'appuie sur un projet open source port�
 
 ## Démo
 
-- Page html de démo : [![Netlify Status](https://api.netlify.com/api/v1/badges/fd3f3d95-d447-4cc8-89b8-552e2a0730b1/deploy-status)](https://app.netlify.com/sites/datami-demo-rhinoc-inclusion/deploys)
+- Page html de démo : [![Netlify Status](https://api.netlify.com/api/v1/badges/d618386d-f14e-4bb5-8c6d-5396af727175/deploy-status)](https://app.netlify.com/sites/datami-demo-doubs-inclusion/deploys)
 - url de démo :
-  - DEMO / données observatoire ODF : https://demo-datami-rhinocc-inclusion.netlify.app/
+  - DEMO / données observatoire ODF : https://demo-datami-doubs-inclusion.netlify.app/
 
 ---
 
 ### Documentation
 
-Un site dédié à la doucmentation technique de Datami est consultable ici : https://datami-docs.multi.coop
+Un site dédié à la documentation technique de Datami est consultable ici : https://datami-docs.multi.coop
 
 ---
 
@@ -88,8 +88,8 @@ sh run_server.sh
 
 Files will be locally served on :
 
-- `http://localhost:8800/content/<path:folder_path>/<string:filename>`
-- `http://localhost:8800/statics/<path:folder_path>/<string:filename>`
+- `http://localhost:8803/content/<path:folder_path>/<string:filename>`
+- `http://localhost:8803/statics/<path:folder_path>/<string:filename>`
 
 ---
 
