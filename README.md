@@ -20,7 +20,7 @@ La solution proposée et réalisée ici s'appuie sur un projet open source port�
 
 - Page html de démo : [![Netlify Status](https://api.netlify.com/api/v1/badges/d618386d-f14e-4bb5-8c6d-5396af727175/deploy-status)](https://app.netlify.com/sites/datami-demo-doubs-inclusion/deploys)
 - url de démo :
-  - DEMO / données observatoire ODF : https://demo-datami-doubs-inclusion.netlify.app/
+  - DEMO : https://demo-datami-doubs-inclusion.netlify.app/
 
 ---
 
