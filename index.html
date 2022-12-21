@@ -9,22 +9,14 @@
   <title>RHINOCC</title>
 </head>
 
-<body style="background-color: #D7D7D7; padding: 1em;">
+<body style="background-color: white; padding: 1em;">
   <noscript>
     <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
       Please enable it to continue.</strong>
   </noscript>
-
-  <h2 id="title-demo" class="pt-6 title is-flex is-align-items-center is-justify-content-center has-text-white">
-    <p>
-      <a href="https://gitlab.com/multi-coop/datami" target="_blank">
-        <img src="https://gitlab.com/multi-coop/datami/-/raw/main/public/logo_DATAMI_title.png" alt="logo datami" style="height: 50px !important; width: auto !important">
-      </a>
-    </p>
-  </h2>
   
   <div class="container has-text-dark">
-    <div class="content my-6 px-6">
+    <!-- <div class="content my-6 px-6">
       <p class="is-size-6">
         L'import du widget <code>Datami</code> dans une page html permet d'afficher sur un site tiers des données hébergées sur github, gitlab ou dans un wiki.
       </p>
@@ -60,7 +52,7 @@
           </li>
         </ul>
       </p>
-    </div>
+    </div> -->
 
     <div style="background-color: white; margin: 1em;">
 
@@ -75,9 +67,20 @@
         }'
         gitfiles='[
         {
-          "title": "Lieux de médiation numérique dans le Doubs",
+          "title": "Introduction",
           "activate": true,
-          "gitfile_": "http://localhost:8803/statics/csv/geocoding/geocoded.csv",
+          "default-tab": false,
+          "localdev": false,
+          "gitfilelocal": "http://localhost:8803/statics/markdown/introduction.md",
+          "gitfile": "https://github.com/multi-coop/data-doubs-inclusion/blob/main/markdown/introduction.md",
+          "onlypreview": true,
+          "usertoken": ""
+        },
+        {
+          "title": "Lieux de médiation numérique",
+          "activate": true,
+          "localdev": false,
+          "gitfilelocal": "http://localhost:8803/statics/csv/geocoding/geocoded.csv",
           "gitfile": "https://github.com/multi-coop/data-doubs-inclusion/blob/main/csv/geocoding/geocoded.csv",
           "default-tab": true,
           "options": {
@@ -92,7 +95,7 @@
                   "filtering": "OR"
                 },
                 {
-                  "name": "COM_NOM",
+                  "name": "SERVICES",
                   "filtering": "OR"
                 },
                 {
@@ -102,16 +105,18 @@
               ]
             },
             "schema": {
-              "file_": "http://localhost:8803/statics/json/doubs-inclusion-lieux-schema.json",
+              "localdev": false,
+              "filelocal": "http://localhost:8803/statics/json/doubs-inclusion-lieux-schema.json",
               "file": "https://github.com/multi-coop/data-doubs-inclusion/blob/main/json/doubs-inclusion-lieux-schema.json"
             },
             "fields-custom-properties": {
-              "file_": "http://localhost:8803/statics/json/doubs-inclusion-lieux-fields-custom-props.json",
+              "localdev": false,
+              "filelocal": "http://localhost:8803/statics/json/doubs-inclusion-lieux-fields-custom-props.json",
               "file": "https://github.com/multi-coop/data-doubs-inclusion/blob/main/json/doubs-inclusion-lieux-fields-custom-props.json"
             },
             "cardsview": {
               "activate": true,
-              "default": false
+              "default": true
             },
             "cardsdetail": true,
             "cardssettings": {
@@ -123,7 +128,8 @@
                   "position": "adress"
                 },
                 "TYPE_STRUCTURE": {
-                  "position": "tags"
+                  "position": "tags",
+                  "prefix": "Type de structure"
                 },
                 "type_lieu": {
                   "position": "subtitle"
@@ -140,13 +146,29 @@
                   "position": "description",
                   "block_title": "Informations"
                 },
-                "VILLE": {
-                  "position": "tags",
-                  "block_title": "Ville"
+                "N_TEL": {
+                  "position": "infos",
+                  "block_title": "N°de téléphone",
+                  "right": false
+                },
+                "WEBSITE": {
+                  "position": "links_top",
+                  "block_title": "Site internet",
+                  "right": true
+                },
+                "MAIL": {
+                  "position": "links_top",
+                  "block_title": "E-mail",
+                  "right": true
                 },
                 "TYPE_STRUCTURE": {
                   "position": "tags",
                   "block_title": "Type de structure",
+                  "right": true
+                },
+                "SERVICES": {
+                  "position": "tags",
+                  "block_title": "Types de services",
                   "right": true
                 },
                 "ACCES": {
@@ -167,21 +189,6 @@
                     },
                     {
                       "text": {
-                        "fr": "Cette commune représente une population de {{ pop_insee }} habitants."
-                      }
-                    },
-                    {
-                      "text": {
-                        "fr": "{{ nom }} publie sur {{ merge }} avec une plateforme de type {{ platform_clean }}."
-                      }
-                    },
-                    {
-                      "text": {
-                        "fr": "Cette organisation a publié {{ nb_ptf }} jeux de données sur sa plateforme et {{ nb_datagouv }} jeux sur data.gouv.fr."
-                      }
-                    },
-                    {
-                      "text": {
                         "fr": "Plus d‘infos en cliquant sur ici : ~~ url_ptf ~~"
                       }
                     }
@@ -197,7 +204,7 @@
                   "minZoom": 2,
                   "item_geo_fields": {
                     "latitude": "latitude",
-                    "longitude": "longitdue"
+                    "longitude": "longitude"
                   },
                   "zoom_item": 13,
                   "marker_icon": "map-marker",
@@ -210,19 +217,21 @@
             "datavizview": {
               "activate": true,
               "default": false,
-              "file_": "http://localhost:8803/statics/json/doubs-inclusion-lieux-dataviz-settings.json",
+              "localdev": false,
+              "filelocal": "http://localhost:8803/statics/json/doubs-inclusion-lieux-dataviz-settings.json",
               "file": "https://github.com/multi-coop/data-doubs-inclusion/blob/main/json/doubs-inclusion-lieux-dataviz-settings.json"
             },
             "mapview": {
               "activate": true,
-              "default": true,
+              "default": false,
               "maps": [
                 {
                   "title": {
                     "fr": "CARTOGRAPHIE"
                   },
                   "cols": 12,
-                  "file_": "http://localhost:8803/statics/json/doubs-inclusion-lieux-map-settings.json",
+                  "localdev": false,
+                  "filelocal": "http://localhost:8803/statics/json/doubs-inclusion-lieux-map-settings.json",
                   "file": "https://github.com/multi-coop/data-doubs-inclusion/blob/main/json/doubs-inclusion-lieux-map-settings.json"
                 }
               ]
@@ -234,7 +243,8 @@
           "title": "Schéma des données",
           "activate": true,
           "default-tab": false,
-          "gitfile_": "http://localhost:8803/statics/json/doubs-inclusion-lieux-schema.json",
+          "localdev": false,
+          "gitfilelocal": "http://localhost:8803/statics/json/doubs-inclusion-lieux-schema.json",
           "gitfile": "https://github.com/multi-coop/data-doubs-inclusion/blob/main/json/doubs-inclusion-lieux-schema.json",
           "options": {
             "defaultDepth": 2,
@@ -254,7 +264,15 @@
 
     </div>
 
-    <p id="page-credits" class="mt-6 has-text-centered has-text-white">
+
+    <h2 id="title-demo" class="pt-6 title is-flex is-align-items-center is-justify-content-center has-text-white">
+      <p>
+        <a href="https://datami.multi.coop" target="_blank">
+          <img src="https://gitlab.com/multi-coop/datami/-/raw/main/public/logo_DATAMI_title.png" alt="logo datami" style="height: 35px !important; width: auto !important">
+        </a>
+      </p>
+    </h2>
+    <!-- <p id="page-credits" class="mt-6 has-text-centered has-text-white">
       Un projet numérique en partenariat avec
       <a href="https://rhinocc.fr" target="_blank" class="has-text-white is-underlined">
         RHINOCC
@@ -264,7 +282,7 @@
       <a href="https://multi.coop" target="_blank" class="has-text-white is-underlined">
         multi
       </a>
-    </p>
+    </p> -->
     <!-- <p id="page-credits" class="my-6 is-flex is-align-items-center is-justify-content-center">
       <a href="https://rhinocc.fr" class="mr-5" target="_blank">
         <img src="https://gitlab.com/multi-coop/data-rhinocc-inclusion/-/raw/main/images/rhinocc-logo.svg" alt="logo RHINOCC" style="height: 60px !important; width: auto !important">

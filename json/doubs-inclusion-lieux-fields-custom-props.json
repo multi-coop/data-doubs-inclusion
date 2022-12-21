@@ -72,7 +72,21 @@
       "name": "SERVICES",
       "subtype": "tags",
       "tagSeparator": "-",
-      "allowNew": true
+      "allowNew": true,
+      "definitions": [
+        {
+          "value": "accomp_demarches",
+          "label" : "Accompagnement de démarches"
+        },
+        {
+          "value": "ateliers_formations",
+          "label" : "Ateliers et formations"
+        },
+        {
+          "value": "tierslieux_cowork",
+          "label" : "Tiers-lieux et coworking"
+        }
+      ]
     },
     {
       "name": "ACCES",
