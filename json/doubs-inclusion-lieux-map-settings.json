@@ -76,7 +76,8 @@
           "#fdbf6f",
           "msap_mfs",
           "#ff7f00",
-          "#000000"
+          "aidant_numerique",
+"#8b4513"
         ],
         "circle_color_activated": [
           "match",
@@ -97,7 +98,8 @@
           "#fdbf6f",
           "msap_mfs",
           "#ff7f00",
-          "#000000"
+          "aidant_numerique",
+"#8b4513"
         ],
         "circle_stroke_color" : "#FFFFFF",
         "circle_opacity"      : 0.9
