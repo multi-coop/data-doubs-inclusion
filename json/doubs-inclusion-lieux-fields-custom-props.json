@@ -73,7 +73,11 @@
         {
           "value": "Personnes Agées",
           "label" : "Personnes Agées"
-        }
+        },
+  {
+          "value": "aidant_connect",
+          "label" : "Aidant Connect"
+        },
       ]
     },
     {
