@@ -223,7 +223,7 @@
                 { "color" : "#e31a1c", "value" : "Entreprise"},
                 { "color" : "#fdbf6f", "value" : "Espace numérique"},
                 { "color" : "#ff7f00", "value" : "MSAP / MFS"},
-                { "color" : "#8b4513", "value" : "Autre"}
+                { "color" : "#000000", "value" : "Autre"}
               ]
             }
 
