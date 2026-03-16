@@ -32,7 +32,7 @@
     {
       "name": "TYPE_STRUCTURE",
       "subtype": "tag",
-      "allowNew": false,
+      "allowNew": true,
       "definitions": [
         {
           "value": "association",
@@ -69,11 +69,7 @@
         {
           "value": "msap_mfs",
           "label" : "Maison France Service"
-        },
-        		{
-          "value": "aidant_connect",
-          "label" : "Aidant Connect"
-        },
+        }
         {
           "value": "Personnes Agées",
           "label" : "Personnes Agées"
