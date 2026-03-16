@@ -32,7 +32,7 @@
     {
       "name": "TYPE_STRUCTURE",
       "subtype": "tag",
-      "allowNew": true,
+      "allowNew": false,
       "definitions": [
         {
           "value": "association",
