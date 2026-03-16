@@ -76,6 +76,8 @@
           "#fdbf6f",
           "msap_mfs",
           "#ff7f00",
+          "aidant_connect",
+          "##FFDE21",
           "#000000"
         ],
         "circle_color_activated": [
@@ -97,6 +99,8 @@
           "#fdbf6f",
           "msap_mfs",
           "#ff7f00",
+           "aidant_connect",
+          "##FFDE21",
           "#000000"
         ],
         "circle_stroke_color" : "#FFFFFF",
