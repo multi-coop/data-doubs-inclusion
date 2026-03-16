@@ -77,7 +77,7 @@
           "msap_mfs",
           "#ff7f00",
           "aidant_connect",
-          "##FFDE21",
+          "#ffde21",
           "#000000"
         ],
         "circle_color_activated": [
@@ -100,7 +100,7 @@
           "msap_mfs",
           "#ff7f00",
            "aidant_connect",
-          "##FFDE21",
+          "#ffde21",
           "#000000"
         ],
         "circle_stroke_color" : "#FFFFFF",
@@ -227,6 +227,7 @@
                 { "color" : "#e31a1c", "value" : "Entreprise"},
                 { "color" : "#fdbf6f", "value" : "Espace numérique"},
                 { "color" : "#ff7f00", "value" : "MSAP / MFS"},
+                { "color" : "##ffde21", "value" : "Aidant Connect"},
                 { "color" : "#000000", "value" : "Autre"}
               ]
             }
